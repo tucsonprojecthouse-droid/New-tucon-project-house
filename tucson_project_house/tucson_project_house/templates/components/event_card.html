@@ -1,0 +1,6 @@
+<article class="event-card" data-event-id="{{ event.id }}" data-category="{{ event.category }}">
+  <span class="event-card__dot event-card__dot--{{ event.category }}"></span>
+  <div class="event-card__date">{{ event.date }}</div>
+  <div class="event-card__name">{{ event.name }}</div>
+  <div class="event-card__category">{{ event.category | upper }}</div>
+</article>

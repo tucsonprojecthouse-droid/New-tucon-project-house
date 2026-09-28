@@ -1,0 +1,32 @@
+<section id="events" class="events">
+  <h2 class="events__heading">UPCOMING EVENTS</h2>
+
+  <!-- Category filter buttons -->
+  <div class="events__filters" id="event-filters">
+    <button class="filter-btn is-active" data-category="all">All</button>
+    <button class="filter-btn" data-category="music">Music</button>
+    <button class="filter-btn" data-category="fashion">Fashion</button>
+    <button class="filter-btn" data-category="film">Film</button>
+  </div>
+
+  <!-- Calendar / List view toggle -->
+  <div class="events__view-toggle">
+    <button class="view-btn is-active" data-view="calendar">Calendar</button>
+    <button class="view-btn" data-view="list">List</button>
+  </div>
+
+  <!-- Calendar month grid (filled in by calendar.js) -->
+  <div id="calendar-view" class="calendar-view">
+    <div class="calendar-view__month-header" id="calendar-month-label"></div>
+    <div class="calendar-view__grid" id="calendar-grid"></div>
+  </div>
+
+  <!-- Simple scrollable list (filled in by calendar.js) -->
+  <div id="list-view" class="list-view" style="display:none;">
+    {% for event in events %}
+      {% include "components/event_card.html" %}
+    {% endfor %}
+  </div>
+</section>
+
+{% include "components/event_modal.html" %}

@@ -1,0 +1,32 @@
+/* buttons.css — every button/CTA style on the site lives here */
+
+.btn {
+  font-family: var(--font-body);
+  font-size: 12px;
+  letter-spacing: 1px;
+  padding: 10px 22px;
+  border-radius: 2px;
+  border: 1.5px solid var(--color-ink);
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn--dark {
+  background: var(--color-ink);
+  color: var(--color-bg);
+}
+
+.btn--dark:hover {
+  opacity: 0.85;
+}
+
+.btn--outline {
+  background: transparent;
+  color: var(--color-ink);
+}
+
+.btn--outline:hover {
+  background: var(--color-ink);
+  color: var(--color-bg);
+}

@@ -1,0 +1,30 @@
+/* newsletter.css — the email signup section */
+
+.newsletter {
+  text-align: center;
+}
+
+.newsletter__heading {
+  margin-bottom: 16px;
+}
+
+.newsletter__form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.newsletter__form input {
+  padding: 10px 14px;
+  border: 1.5px solid var(--color-ink);
+  border-radius: 2px;
+  font-size: 13px;
+  min-width: 220px;
+  background: var(--color-bg);
+}
+
+.newsletter__message {
+  margin-top: 12px;
+  font-size: 13px;
+}

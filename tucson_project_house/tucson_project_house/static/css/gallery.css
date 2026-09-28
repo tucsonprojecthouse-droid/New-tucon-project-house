@@ -1,0 +1,24 @@
+/* gallery.css — the past-events photo grid */
+
+.gallery__heading {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.gallery__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.gallery__item {
+  aspect-ratio: 1 / 1;
+  background: var(--color-ink);
+  border-radius: 4px;
+}
+
+@media (max-width: 600px) {
+  .gallery__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

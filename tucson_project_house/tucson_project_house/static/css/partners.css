@@ -1,0 +1,25 @@
+/* partners.css — the partners/sponsors logo (text) strip */
+
+.partners {
+  text-align: center;
+}
+
+.partners__heading {
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  color: var(--color-muted);
+}
+
+.partners__row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+
+.partners__name {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: 14px;
+}

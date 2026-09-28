@@ -1,0 +1,34 @@
+/* base.css — global resets, colors, and fonts used across the whole site */
+
+:root {
+  --color-bg: #EDEAE4;      /* cream background */
+  --color-ink: #111111;     /* near-black text/graphics */
+  --color-muted: #555555;
+
+  --font-display: 'Arial Black', Impact, sans-serif; /* bold condensed headlines */
+  --font-mono: 'Courier New', monospace;              /* pixel/mono taglines */
+  --font-body: Helvetica, Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+}
+
+section {
+  padding: 48px 24px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-family: var(--font-display);
+  font-weight: 900;
+  letter-spacing: -0.5px;
+}
